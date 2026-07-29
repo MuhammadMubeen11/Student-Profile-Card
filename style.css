@@ -1,0 +1,622 @@
+/* ===============================
+   GOOGLE FONT
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#9DC183,#F5F5DC,#FFD1DC);
+    min-height:100vh;
+    color:#2F4F4F;
+    transition:.4s;
+}
+
+/* ===============================
+NAVBAR
+================================ */
+
+nav{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:35px;
+    font-weight:700;
+    color:#c8b6ff;
+
+}
+
+nav ul{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+
+}
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+
+}
+
+nav ul li a:hover{
+
+    color:#c8b6ff;
+
+}
+
+.nav-icons button{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#8b5cf6;
+    color:#2F4F4F;
+    font-size:18px;
+
+}
+
+/* ===============================
+MAIN
+================================ */
+
+.container{
+
+    width:92%;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+
+}
+
+/* ===============================
+LEFT PANEL
+================================ */
+
+.form-box{
+
+    background:rgba(255,255,255,.07);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+
+}
+
+.form-box h1{
+
+    font-size:40px;
+    margin-bottom:10px;
+
+}
+
+#greeting{
+
+    color:#000000;
+    margin-bottom:8px;
+
+}
+
+#today{
+
+    margin-bottom:30px;
+    font-size:17px;
+    color:#493605;
+
+}
+
+/* ===============================
+INPUTS
+================================ */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+.input-group input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.08);
+
+    color:#2F4F4F;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    font-size:15px;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#cfcfcf;
+
+}
+
+small{
+
+    color:#aaa;
+
+}
+
+/* ===============================
+ROW
+================================ */
+
+.row{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+
+}
+
+/* ===============================
+COLOR PICKER
+================================ */
+
+.color-area{
+
+    display:flex;
+    gap:12px;
+
+}
+
+#colorPicker{
+
+    width:70px;
+    padding:5px;
+    cursor:pointer;
+}
+
+/* ===============================
+BUTTONS
+================================ */
+
+.buttons{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+
+    margin-top:30px;
+
+}
+
+.buttons button{
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+#createBtn{
+
+    background:#8b5cf6;
+    color:white;
+
+}
+
+#resetBtn{
+
+    background:#444;
+
+    color:white;
+
+}
+
+#hideBtn{
+
+    background:#ff77aa;
+
+    color:white;
+
+}
+
+#themeButton{
+
+    background:#00c896;
+
+    color:white;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 20px rgba(0,0,0,.3);
+
+}
+
+/* ===============================
+PROFILE CARD
+================================ */
+
+.profile-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:35px;
+
+    padding:40px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+    overflow:hidden;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    right:30px;
+    top:30px;
+
+    background:#8b5cf6;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+}
+
+.profile-card img{
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:auto;
+
+    border:5px solid #9f7aea;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.4);
+
+}
+
+.profile-card h4{
+
+    margin-top:25px;
+    color:#bba8ff;
+    letter-spacing:1px;
+
+}
+
+.profile-card h1{
+
+    font-size:55px;
+    margin:10px 0;
+
+    word-break:break-word;
+
+}
+
+.profile-card hr{
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+    margin:25px 0;
+
+}
+
+.info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    text-align:center;
+
+}
+
+.info h5{
+
+    color:#9f92c8;
+    margin-bottom:8px;
+
+}
+
+.info p{
+
+    font-size:22px;
+    font-weight:600;
+
+}
+
+/* Skills */
+
+#skillContainer{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+#skillContainer span{
+
+    background:#8b5cf6;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+}
+
+/* Hobby */
+
+.bottom{
+
+    margin-top:30px;
+
+}
+
+.bottom span{
+
+    background:#ffffff15;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    display:inline-block;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#1b101f;
+
+}
+
+/* ===============================
+GREEN-BLUE THEME
+================================ */
+
+.light{
+
+    background: linear-gradient(135deg,#1A1953,#2B5748,#2B5748);
+    color:white;
+
+}
+
+.light nav{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.light .form-box,
+.light .profile-card{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    color:white;
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.light input,
+.light textarea{
+
+    background:rgba(255,255,255,.08);
+    color:white;
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+.light input::placeholder,
+.light textarea::placeholder{
+
+    color:#d8d8d8;
+
+}
+
+.light .logo{
+
+    color:#9be7c4;
+
+}
+
+.light nav ul li a{
+
+    color:white;
+
+}
+
+.light nav ul li a:hover{
+
+    color:#9be7c4;
+
+}
+
+.light #createBtn{
+
+    background:#2B5748;
+
+}
+
+.light #resetBtn{
+
+    background:#1A1953;
+
+}
+
+.light #hideBtn{
+
+    background:#4E8D74;
+
+}
+
+.light #themeButton{
+
+    background:#0F766E;
+
+}
+
+.light .badge{
+
+    background:#2B5748;
+
+}
+
+.light #skillContainer span{
+
+    background:#2B5748;
+
+}
+
+.light .bottom span{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.light footer{
+
+    color:#152d23;
+
+}
+/* ===============================
+   CREDIT
+================================ */
+
+.credit{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #322169;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    z-index: 999;
+}
+
+.light .credit{
+    color: #7c3aed;
+    background: rgba(255,255,255,0.9);
+}
